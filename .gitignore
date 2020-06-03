@@ -1,16 +1,5 @@
-# dependencies
-/node_modules
-
-
-# production
-/build
-
-
 # assets
 /src/res
 
-
 # misc
 .DS_Store
-
-npm-debug.log*

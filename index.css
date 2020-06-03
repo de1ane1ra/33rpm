@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+::selection {
+    color: white;
+    background-color: black;
+}
+
+body {
+    font-family: monospace;
+    color: black;
+    background-color: white;
+    padding-top: 50vh;
+    font-size: 1.2rem;
+}
+
+header {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+svg {
+    fill: none;
+    stroke-width: 1px;
+    stroke: #000000;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+figure {
+    position: relative;
+    width: 25rem; /* 800px looks cool */
+    margin: 0 auto;
+    margin-bottom: 1.25rem;
+    transition: width 1s ease;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    user-select: none;
+    pointer-events: none;
+}
+
+figcaption {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.75rem;
+}
+
+/*figcaption {
+    position: absolute;
+    right: -2rem;
+    top: 0;
+    writing-mode: tb;
+    transform: rotate(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}*/
+
+span {
+    display: block;
+}
+
+.concept-art__date {
+    font-size: 1.4rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    writing-mode: tb;
+    transform: rotate(180deg);
+}
