@@ -9,24 +9,23 @@ html {
 }
 
 ::selection {
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: white;
 }
 
 body {
     font-family: monospace;
-    color: black;
-    background-color: white;
-    padding-top: 50vh;
+    color: white;
+    background-color: black;
     font-size: 1.2rem;
 }
 
 header {
-    position: absolute;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 2rem;
     width: 100%;
     top: 0;
     left: 0;
@@ -36,20 +35,28 @@ header {
 svg {
     fill: none;
     stroke-width: 1px;
-    stroke: #000000;
+    stroke: #FFFFFF;
+}
+
+a {
+    color: inherit;
+}
+
+a:hover,
+a:active {
+    text-decoration: none;
 }
 
 section {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 24rem;
 }
 
 figure {
-    position: relative;
-    width: 25rem; /* 800px looks cool */
+    width: 800px;
     margin: 0 auto;
-    margin-bottom: 1.25rem;
-    transition: width 1s ease;
+    margin-bottom: 12rem;
 }
 
 img {
