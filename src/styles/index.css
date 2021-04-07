@@ -6,6 +6,7 @@
 
 html {
     font-size: 10px;
+    line-height: 1.618;
 }
 
 ::selection {
@@ -19,6 +20,13 @@ body {
     background-color: black;
     font-size: 1.2rem;
 }
+
+#top {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 
 header {
     position: fixed;
@@ -72,27 +80,22 @@ figcaption {
     margin-top: 0.75rem;
 }
 
-/*figcaption {
-    position: absolute;
-    right: -2rem;
-    top: 0;
-    writing-mode: tb;
-    transform: rotate(180deg);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
-}*/
-
 span {
     display: block;
 }
 
-.concept-art__date {
-    font-size: 1.4rem;
-    position: absolute;
-    right: 0;
+footer {
+    position: fixed;
     bottom: 0;
-    writing-mode: tb;
-    transform: rotate(180deg);
+    right: 0;
+    padding: 2rem;
+    text-align: right;
+}
+
+#webring {
+    filter: invert(1);
+    width: 32px;
+    text-align: right;
+    display: block;
+    margin-left: auto;
 }
