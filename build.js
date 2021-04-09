@@ -1,3 +1,5 @@
+"use strict";
+
 const fs = require("fs");
 
 const build_for = "public";
@@ -81,7 +83,7 @@ const t__pg__showcase = function(img_path) {
             </body>
         </html>`
     );
-}
+};
 
 const write_html_to_file = (write_path, file_name, page_data) => {
     fs.writeFile(`${write_path}/${file_name}`, page_data, error => {
